@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pmt.toan.webbrower.MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNext"
+        android:layout_alignBottom="@+id/btnBack"
+        android:layout_toRightOf="@+id/btnBack"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReload"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnNext"
+        android:layout_toEndOf="@+id/btnNext"
+        android:src="@android:drawable/ic_menu_rotate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtLink"
+        android:hint="Enter your link"
+        android:layout_alignBottom="@+id/btnOk"
+        android:layout_toRightOf="@+id/btnReload"
+        android:layout_toEndOf="@+id/btnReload" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btnOk"
+        android:layout_alignTop="@+id/btnReload"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/btnBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/web" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlay"
+        android:src="@android:drawable/ic_menu_slideshow"
+        android:layout_alignTop="@+id/btnOk"
+        android:layout_toLeftOf="@+id/btnOk"
+        android:layout_toStartOf="@+id/btnOk" />
+
+</RelativeLayout>
